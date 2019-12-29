@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSYatzy.Kerne", "CSYatzy.Kerne\CSYatzy.Kerne.csproj", "{CF743910-3601-41EF-A122-2BFA9D85E7E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSYatzy.ConsoleApp", "CSYatzy.ConsoleApp\CSYatzy.ConsoleApp.csproj", "{C690237B-9063-4886-937A-D8FCED18C936}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF743910-3601-41EF-A122-2BFA9D85E7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF743910-3601-41EF-A122-2BFA9D85E7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF743910-3601-41EF-A122-2BFA9D85E7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF743910-3601-41EF-A122-2BFA9D85E7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C690237B-9063-4886-937A-D8FCED18C936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C690237B-9063-4886-937A-D8FCED18C936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C690237B-9063-4886-937A-D8FCED18C936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C690237B-9063-4886-937A-D8FCED18C936}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B8B20CB-215C-456E-BF51-CF70DE0F477C}
+	EndGlobalSection
+EndGlobal

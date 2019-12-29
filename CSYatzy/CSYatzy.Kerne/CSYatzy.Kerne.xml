@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSYatzy.Kerne</name>
+    </assembly>
+    <members>
+        <member name="T:CSYatzy.Kerne.YatzyBæger">
+            <summary>
+            Bæger til at opbevare 5 terninger
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.#ctor">
+            <summary>
+            Opretter bæger med 5 terninger
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.#ctor(System.Int32[])">
+            <summary>
+            Opretter bæger med 5 konkrete terninger 
+            </summary>
+            <param name="værdier">array af terninger (skal bestå af fem tal)</param>
+        </member>
+        <member name="E:CSYatzy.Kerne.YatzyBæger.ErRystet">
+            <summary>
+            Hændelse der smides når terningerne er rystet
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyBæger.Sum">
+            <summary>
+            Returnerer den samlede sum af terninger i bægeret
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyBæger.Item(System.Int32)">
+            <summary>
+            Sikrer, at man kan tilgå terninger ved hjælp af et indeks
+            </summary>
+            <param name="index">Konkrete indeks mellem 0-4</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.FindAntalEnsTerninger(System.Int32)">
+            <summary>
+            Beregner hvor mange ens terninger der findes i bægeret af en konkret værdi
+            </summary>
+            <param name="værdi">Terningens værdi</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.FindAntalEnsTerninger">
+            <summary>
+            Returnerer en dictionary der viser hvor mange ens terninger der findes i bægeret af en konkret værdi
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.FjernHoldFraAlleTerninger">
+            <summary>
+            Fjerner hold (sætter til false) på samtlige terninger
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.GetEnumerator">
+            <summary>
+            Til IEnumerable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Til IEnumerable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.HoldTerning(System.Int32,System.Boolean)">
+            <summary>
+            Sætter hold (kan ikke rystes) på en konkret terning
+            </summary>
+            <param name="indeks">0-5</param>
+            <param name="holdVærdi">true/false - default er true</param>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.Ryst">
+            <summary>
+            Finder en tilfældig værdi til alle terninger som ikke har hold=true
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.Sorter">
+            <summary>
+            Sorterer terninger
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.ToString">
+            <summary>
+            Skaber en streng repræsentation af bægeret
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyBæger.FindEns">
+            <summary>
+            Opretter en dictionary med ens terninger (key=1-6, value=antal ens)
+            </summary>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzyException">
+            <summary>
+            YatzyException der benyttes som exception af alle klasser
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyException.#ctor(System.String)">
+            <summary>
+            Opret exception med en meddelelse
+            </summary>
+            <param name="message">Meddelelse</param>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzyPoint">
+            <summary>
+            Repræsenterer et yatzy point (enere, toere, chancen, yatzy mv)
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPoint.Navn">
+            <summary>
+            Navn på pointtype
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPoint.MaxPoint">
+            <summary>
+            Det samlede maksimale point
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPoint.Point">
+            <summary>
+            Antal point
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPoint.PointType">
+            <summary>
+            Point type
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPoint.Sortering">
+            <summary>
+            Sortering (benyttes når der blandt andet skabes en streng i ToString)
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPoint.CompareTo(CSYatzy.Kerne.YatzyPoint)">
+            <summary>
+            IComparable
+            </summary>
+            <param name="other">Point at sammenligne</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPoint.ToString">
+            <summary>
+            Point type som en streng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzyPointTavle">
+            <summary>
+            Repræsentere en enkelt pointtavle (enere, toere, chancen, yatzy mv)
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPointTavle.#ctor">
+            <summary>
+            Opret pointtavle
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPointTavle.Bonus">
+            <summary>
+            Er der bonus (enkelt terninger skal have en værdi over 63)
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPointTavle.Sum">
+            <summary>
+            Den samlede sum
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyPointTavle.SumEnkeltTerninger">
+            <summary>
+            Beregner summen af enkelt terninger
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPointTavle.FindIkkeBenyttedePoint">
+            <summary>
+            Er der nogle pointtyper som ikke er benyttet
+            </summary>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPointTavle.FindMuligePoint(CSYatzy.Kerne.YatzyBæger)">
+            <summary>
+            Finder de konkrete mulige typer af point udfra et bæger med terninger
+            </summary>
+            <param name="bæger">Bæger</param>
+            <returns>Liste af mulige point</returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPointTavle.TilføjPoint(CSYatzy.Kerne.YatzyPointType,System.Int32)">
+            <summary>
+            Tilføj point
+            </summary>
+            <param name="type">Den konkret point type</param>
+            <param name="samletPoint">De ønskede antal point</param>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPointTavle.ToString">
+            <summary>
+            Streng der viser point tavlen
+            </summary>
+            <returns>Tekst</returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyPointTavle.FindAlleMuligePoint(CSYatzy.Kerne.YatzyBæger)">
+            <summary>
+            Hvilke point typer er mulige med et bæger af terninger
+            </summary>
+            <param name="bæger">Bæger med terninger</param>
+            <returns>Liste af point</returns>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzyPointType">
+            <summary>
+            Enum der repræsenterer en point type (enere, toere, chancen, yatzy mv)
+            </summary>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzySpil">
+            <summary>
+            Repræsenterer et spil med spillere
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzySpil.#ctor(System.String[])">
+            <summary>
+            Opret et spil med et antal spillere
+            </summary>
+            <param name="navne">Array af navne</param>
+        </member>
+        <member name="E:CSYatzy.Kerne.YatzySpil.NæsteHændelse">
+            <summary>
+            "Hjerteslaget" i spillet som smides hver kan en spiller ryster bægeret
+            </summary>
+        </member>
+        <member name="E:CSYatzy.Kerne.YatzySpil.SlutHændelse">
+            <summary>
+            Hændelse der smides når spillet er slut
+            </summary>
+        </member>
+        <member name="E:CSYatzy.Kerne.YatzySpil.StartHændelse">
+            <summary>
+            Hændelse der smides når spillet startes
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpil.AktuelSpillerAntalSlag">
+            <summary>
+            Fortæller hvor mange slag den aktuelle spiller har slået
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpil.Bæger">
+            <summary>
+            Spillets bæger med terninger som deles mellem spillerne
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpil.AktuelSpiller">
+            <summary>
+            Den aktuelle spiller
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpil.Spillere">
+            <summary>
+            Samtlige spillere i spillet
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpil.SpillereSorteretEfterStilling">
+            <summary>
+            Spillere sorteret efter stilling (sum i pointtavle)
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzySpil.Næste">
+            <summary>
+            "Hjerteslaget" - metoden som kaldet i et loop hver gang der skal slås med terningerne
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzySpil.Slut">
+            <summary>
+            Metode som fortæller om spillet er slut
+            </summary>
+            <returns>true/false</returns>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzySpilEventArgs">
+            <summary>
+            EventsArgs der benyttes af yatzy hændelser
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpilEventArgs.Spil">
+            <summary>
+            Det spil som hændelsen hører til
+            </summary>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzySpiller">
+            <summary>
+            Repræsenterer en spiller
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpiller.Navn">
+            <summary>
+            Spillerens navn
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzySpiller.PointTavle">
+            <summary>
+            Spillerens pointtavle
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzySpiller.#ctor(System.String)">
+            <summary>
+            Opret en spiller med et konkret navn
+            </summary>
+            <param name="navn">Navn</param>
+        </member>
+        <member name="T:CSYatzy.Kerne.YatzyTerning">
+            <summary>
+            Klassen repræsenterer en (sorterbar) terning
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyTerning.#ctor">
+            <summary>
+            Opretter en terning og skaber en tilfældig værdi
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyTerning.#ctor(System.Int32)">
+            <summary>
+            Opretter en terning med en konkret værdi (brugt i test)
+            </summary>
+            <param name="værdi">Værdi mellem 1-6</param>
+        </member>
+        <member name="E:CSYatzy.Kerne.YatzyTerning.ErRystet">
+            <summary>
+            Hændelse der smides når terning er rystet
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyTerning.ErHoldt">
+            <summary>
+            Benyttes i et bæger af terninger til at indikere, at terningen skal bibeholde sin værdi ved ryst
+            </summary>
+        </member>
+        <member name="P:CSYatzy.Kerne.YatzyTerning.Værdi">
+            <summary>
+            Konkret værdi (1-6)
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyTerning.CompareTo(CSYatzy.Kerne.YatzyTerning)">
+            <summary>
+            Fra IComparable - sikrer at en terning kan sorteres efter værdi
+            </summary>
+            <param name="other">Terning til sammenligning</param>
+            <returns>Værdi mellem -1 til 1</returns>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyTerning.Hold(System.Boolean)">
+            <summary>
+            Sætter værdi til hold så en terning kan/ikke kan rystes 
+            </summary>
+            <param name="værdi">true = hold, false = ikke hold</param>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyTerning.Ryst">
+            <summary>
+            Finder en tilfældig værdi til terning mellem 1-6 
+            </summary>
+        </member>
+        <member name="M:CSYatzy.Kerne.YatzyTerning.ToString">
+            <summary>
+            Viser en terning som en streng - [værdi] eller *værdi* (* betyder, at terning ikke for en ny værdi ved ryst)
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

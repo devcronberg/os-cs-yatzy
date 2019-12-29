@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSYatzy.ConsoleApp</name>
+    </assembly>
+    <members>
+        <member name="T:CSYatzy.ConsoleApp.Program">
+            <summary>
+            Selve programmet
+            </summary>
+        </member>
+        <member name="M:CSYatzy.ConsoleApp.Program.Main">
+            <summary>
+            Main er start metoden og indeholder brugerflade til hele spillet. Al logik findes i separat assembly
+            </summary>
+        </member>
+        <member name="M:CSYatzy.ConsoleApp.Program.HentVærdierTilPoint(System.Int32)">
+            <summary>
+            Henter et tal mellem 1 og max
+            </summary>
+            <param name="max">Det største tilladte tal</param>
+            <returns>Tal</returns>
+        </member>
+        <member name="M:CSYatzy.ConsoleApp.Program.HentVærdierTilHold">
+            <summary>
+            Henter et array af tal mellem 1-5 uden dubletter
+            </summary>
+            <returns>Array af tal</returns>
+        </member>
+    </members>
+</doc>

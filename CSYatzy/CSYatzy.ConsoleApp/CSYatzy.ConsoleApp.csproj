@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\git-undervisning\devcronberg\os-cs-yatzy\CSYatzy\CSYatzy.ConsoleApp\CSYatzy.ConsoleApp.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSYatzy.Kerne\CSYatzy.Kerne.csproj" />
+  </ItemGroup>
+
+</Project>
