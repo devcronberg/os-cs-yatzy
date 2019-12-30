@@ -18,7 +18,7 @@ Her er et par screenshorts af applikationen til orientering.
 
 ## Løsning
 
-Du kan lade dig inspirere at koden i dette repository, hvor jeg har valgt at oprette en løsning med en "kerne" (.NET Standard klassebibliotek) og en "brugerflade" (.NET Core Console App). På den måde er jeg sikker på, at jeg kan benytte applikationer på Windows, Mac og Linux, og jeg kan uden problemer benytte kerne på andre platforme.
+Du kan lade dig inspirere at koden i dette repository, hvor jeg har valgt at oprette en løsning med en "kerne" (.NET Standard klassebibliotek) og en "brugerflade" (.NET Core Console App). På den måde er jeg sikker på, at jeg kan benytte applikationen på Windows, Mac og Linux, og jeg kan uden problemer benytte kernen på andre platforme.
 
 Jeg har valgt at oprette klasser som
 
