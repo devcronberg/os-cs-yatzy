@@ -2,7 +2,11 @@
 
 Dette er en lidt omfattende opgave i både objektorienteret design og C# udvikling. Du skal skabe et Yatzy-spil hvor en eller flere spillere kan spille mod sig selv eller hinanden. Som ekstraopgave kan du eventuelt skabe en "Yatzy-bot", som kan simulere en eller flere modspillere. Som brugerflade kan du som udgangspunkt benytte en Console-applikation, men det skal være nemt at flytte brugerfladen til en Windows, Linux, Mac, Mobil, Web eller Service-brugerflade.
 
-Opgaven er helt fri, og det er op til dig hvordan du løser den, men den skal ende i noget der minder den app du kan finde i dette respository. Jeg vil derfor anbefale dig at hente applikationen, og køre den gennem Visual Studio for at spille et enkelt spil mod dig selv. Du kan eventuelt også finde den sidste release [her](https://github.com/devcronberg/os-cs-yatzy/releases/latest), og hente csyatzy.zip. Herefter kan du afvikle app med ```dotnet csyatzy.consoleapp.dll```.
+Opgaven er helt fri, og det er op til dig hvordan du løser den, men den skal ende i noget der minder den 
+app du kan finde i dette respository. Jeg vil derfor anbefale dig at hente applikationen, og køre den 
+gennem Visual Studio for at spille et enkelt spil mod dig selv. Du kan eventuelt også finde den 
+sidste release [her](https://github.com/devcronberg/os-cs-yatzy/releases/latest), og hente csyatzy.zip. Herefter 
+kan du afvikle app med ```dotnet csyatzy.consoleapp.dll``` eller afvikle spil_yatzy_win.bat (hvis du er på en Windows-platform).
 
 Her er et par screenshorts af applikationen til orientering.
 

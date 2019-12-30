@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,6 +11,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CSYatzy.Kerne\CSYatzy.Kerne.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="spil_yatzy_win.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
