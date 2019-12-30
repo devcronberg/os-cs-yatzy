@@ -1,4 +1,4 @@
-name: .NET Core
+name: Build and deploy to release
 
 on: [push]
 
@@ -22,7 +22,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
       with:        
         release_name: CSYatzy
-        tag-name: CSYatzy
+        tag_name: CSYatzy
         draft: false
         prerelease: false
     - name: Zip
