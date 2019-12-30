@@ -26,4 +26,14 @@ jobs:
         draft: false
         prerelease: false
     - name: Zip
-      run: zip csyatzy ./CSYatzy/CSYatzy.Kerne/bin/Release/netstandard2.0/CSYatzy.Kerne.dll ./CSYatzy/CSYatzy.Kerne/bin/Release/netstandard2.0/CSYatzy.ConsoleApp.dll
+      run: zip CSYatzy.zip ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/CSYatzy.Kerne.dll ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/CSYatzy.ConsoleApp.dll
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ./CSYatzy.zip
+        asset_name: CSYatzy.zip
+        asset_content_type: application/zip
