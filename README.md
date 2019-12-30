@@ -24,6 +24,7 @@ Jeg har valgt at oprette klasser som
 
 og de er nogenlunde dokumenteret, så måske kan du få et par ideer til din egen løsning.
 
-Held og lykke ;)
-Michell
+Held og lykke
+
+/Michell
 
