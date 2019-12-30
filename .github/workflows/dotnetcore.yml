@@ -1,6 +1,9 @@
 name: Build and deploy to release
 
-on: [push]
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -26,7 +29,7 @@ jobs:
         draft: false
         prerelease: false            
     - name: Zip
-      run: zip CSYatzy.zip ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/CSYatzy.Kerne.dll ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/CSYatzy.ConsoleApp.dll
+      run: zip -j CSYatzy.zip ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/CSYatzy.Kerne.dll ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/CSYatzy.ConsoleApp.dll
     - name: Upload Release Asset
       id: upload-release-asset 
       uses: actions/upload-release-asset@v1.0.1
