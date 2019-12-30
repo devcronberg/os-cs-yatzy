@@ -8,6 +8,8 @@ Opgaven er helt fri, og det er op til dig hvordan du løser den, men den skal en
 ![](CSYatzy/Billeder/b2.png)
 ![](CSYatzy/Billeder/b3.png)
 
+Du kan eventuelt finde den sidste release [her](https://github.com/devcronberg/os-cs-yatzy/releases/latest), og hente csyatzy.zip. Herefter kan du afvikle app med ```dotnet csyatzy.consoleapp.dll```.
+
 ## Løsning
 
 Du kan lade dig inspirere at koden i dette repository, hvor jeg har valgt at oprette en løsning med en "kerne" (.NET Standard klassebibliotek) og en "brugerflade" (.NET Core Console App). På den måde er jeg sikker på, at jeg kan benytte applikationer på Windows, Mac og Linux, og jeg kan uden problemer benytte kerne på andre platforme.
