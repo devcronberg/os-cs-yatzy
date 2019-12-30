@@ -5,9 +5,9 @@
         <TargetFramework>netcoreapp2.2</TargetFramework>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PropertyGroup>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <DocumentationFile>C:\git-undervisning\devcronberg\os-cs-yatzy\CSYatzy\CSYatzy.ConsoleApp\CSYatzy.ConsoleApp.xml</DocumentationFile>
+        <DocumentationFile>$(OutputPath)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
