@@ -36,3 +36,4 @@ Held og lykke
 
 /Michell
 
+![](http://log.cronberg.dk/logimage?application=cskursus&group1=opgaver&group2=yatzy)
