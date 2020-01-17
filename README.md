@@ -1,4 +1,4 @@
-# Udvidet C#-opgave
+# Udvidet C#-opgave: Yatzy
 
 Dette er en lidt omfattende opgave i både objektorienteret design og C# udvikling. Du skal skabe et Yatzy-spil hvor en eller flere spillere kan spille mod sig selv eller hinanden. Som ekstraopgave kan du eventuelt skabe en "Yatzy-bot", som kan simulere en eller flere modspillere. Som brugerflade kan du som udgangspunkt benytte en Console-applikation, men det skal være nemt at flytte brugerfladen til en Windows, Linux, Mac, Mobil, Web eller Service-brugerflade.
 
