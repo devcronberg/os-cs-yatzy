@@ -29,7 +29,7 @@ jobs:
         draft: false
         prerelease: false            
     - name: Zip
-      run: zip -j CSYatzy.zip ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/*.dll ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/*.json ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/*.bat ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp2.2/*.xml
+      run: zip -j CSYatzy.zip ./CSYatzy/CSYatzy.ConsoleApp/bin/Release/netcoreapp3.1/*.*
     - name: Upload Release Asset
       id: upload-release-asset 
       uses: actions/upload-release-asset@v1.0.1
